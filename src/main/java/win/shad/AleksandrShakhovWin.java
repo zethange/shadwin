@@ -1,6 +1,5 @@
 package win.shad;
 
-import org.teavm.jso.JSBody;
 import org.teavm.jso.browser.Window;
 import org.teavm.jso.dom.html.HTMLDocument;
 import org.teavm.jso.dom.html.HTMLElement;
@@ -16,10 +15,8 @@ public class AleksandrShakhovWin {
     }
 
     public static void main(String[] args) {
-
         HTMLElement el = HTMLDocument.current().getElementById("count");
         Date startDate = new Date(2024 - 1900, Calendar.JANUARY, 1);
-
 
         Window.setInterval(() -> {
             double years = getYearsDiff(startDate);
